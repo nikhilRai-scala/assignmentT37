@@ -11,8 +11,7 @@ import org.jsoup.select.Elements
 import java.nio.file.{Files, Path, Paths}
 //added comment
 object main extends App {
-  System.setProperty("http.proxyHost", "proxy-se-uan.ddc.teliasonera.net")
-  System.setProperty("http.proxyPort", "8080")
+
 
   def getLinks(url: String, selector: String,rootUrl: String) = {
     val document: Document = Jsoup.connect(url).get()
